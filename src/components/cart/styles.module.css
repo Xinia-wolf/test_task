@@ -1,0 +1,102 @@
+@font-face {
+    src: url("../../fonts/Montserrat-SemiBold.ttf");
+    font-family: "Montserrat SemiBold";
+}
+
+@font-face {
+    src: url("../../fonts/Montserrat-Medium.ttf");
+    font-family: "Montserrat Medium";
+  }
+
+.cart_header {
+    font-family: "Montserrat SemiBold";
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.cartContainer {
+    margin-bottom: 407px;
+}
+
+.itemCard {
+    width: 633px;
+    height: 218px;
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 18.76px;
+    margin-bottom: 30px;
+}
+
+.itemImage {
+    width: 146.53px;
+    height: 136px;
+    margin-top: 18px;
+}
+
+.itemInfo {
+    margin-top: 76px;
+    margin-left: 23.44px;
+}
+
+.itemTitle {
+    font-family: "Montserrat Medium";
+    font-size: 17px;
+}
+
+.itemPrice {
+    margin-top: 12px;
+    font-family: "Montserrat SemiBold";
+    font-size: 15px;
+    color: #AAAAAA;
+}
+
+.itemPrice:after {
+	content: ' \20BD';
+}
+
+.quantityButtons {
+    display: flex;
+    align-items: center;
+    width: 118.21px;
+    height: 30px;
+    margin-top: 173px;
+    margin-left: -310.877px;
+}
+
+.decrement {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFCE7F;
+    color: white;
+    font-family: "Montserrat SemiBold";
+    font-size: 17px;
+}
+
+.decrement:hover {
+    cursor: pointer;
+}
+
+.quantity {
+    margin-left: 25px;
+    font-family: "Montserrat SemiBold";
+    font-size: 17px;
+}
+
+.increment {
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFCE7F;
+    color: white;
+    font-family: "Montserrat SemiBold";
+    font-size: 17px;
+}
+
+.increment:hover {
+    cursor: pointer;
+}
