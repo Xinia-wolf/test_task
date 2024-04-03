@@ -26,7 +26,7 @@ const ApplicationBar = () => {
         <div className={st.cart_container}>
           <NavLink to="/cart" className={st.cart}>
             <img src={cart} alt="cart_icon"></img>
-            {!itemsCounter || <div><img src={ellipse} className={st.ellipse}></img><p className={st.itemsCounter}>{itemsCounter}</p></div>}
+            {!itemsCounter || <div><img src={ellipse} alt="yellow_ellipse" className={st.ellipse}></img><p className={st.itemsCounter}>{itemsCounter}</p></div>}
           </NavLink>
         </div>
       </div>

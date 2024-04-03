@@ -5,7 +5,7 @@ import CartItem from "./cart-item";
 
 const Cart = () => {
   const { cartItems } = useContext(CartContext);
-  
+
   return (
     <div>
       <h2 className={st.cart_header}>Корзина</h2>
