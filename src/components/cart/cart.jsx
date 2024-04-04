@@ -10,10 +10,15 @@ const Cart = () => {
     <div>
       <h2 className={st.cart_header}>Корзина</h2>
       <div className={st.cartContainer}>
-      {cartItems.length === 0 && <p>Ваша корзина пуста</p>}
+        {cartItems.length === 0 && <p>Ваша корзина пуста</p>}
         {cartItems.map((item) => (
-          <CartItem item={item} />
+          <CartItem key={item.id} item={item} />
         ))}
+      </div>
+      <div className={st.totalCost}>
+        <p>ИТОГО</p>
+        
+        <button>Перейти к оформлению</button>
       </div>
     </div>
   );

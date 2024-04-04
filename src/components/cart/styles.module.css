@@ -24,19 +24,24 @@
     display: flex;
     background-color: white;
     border-radius: 30px;
-    padding-left: 18.76px;
+    padding-top: 18px;
+    padding-right: 28.13px;
     margin-bottom: 30px;
+}
+
+.imageAndQuantity {
+    margin-left: 18.76px;
 }
 
 .itemImage {
     width: 146.53px;
     height: 136px;
-    margin-top: 18px;
 }
 
 .itemInfo {
-    margin-top: 76px;
+    margin-top: 58px;
     margin-left: 23.44px;
+    width: 396.21px;
 }
 
 .itemTitle {
@@ -60,8 +65,8 @@
     align-items: center;
     width: 118.21px;
     height: 30px;
-    margin-top: 173px;
-    margin-left: -310.877px;
+    margin-left: 14.24px;
+    margin-top: 19px;
 }
 
 .decrement {
@@ -99,4 +104,26 @@
 
 .increment:hover {
     cursor: pointer;
+}
+
+.trashBin {
+    width: 19.93px;
+    height: 17px;
+}
+
+.trashBin {
+    cursor: pointer;
+    margin-right: -100.81px;
+}
+
+.itemTotal {
+    margin-top: 144px;
+    width: 100.81px;
+    text-align: right;
+    font-family: "Montserrat SemiBold";
+    font-size: 15px;
+}
+
+.itemTotal:after {
+	content: ' \20BD';
 }
