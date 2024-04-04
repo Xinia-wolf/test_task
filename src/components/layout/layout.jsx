@@ -7,13 +7,19 @@ import { CartContext } from "../context/cart-context";
 const Layout = () => {
   const [itemsCounter, setItemsCounter] = useState(0);
   const [cartItems, setCartItems] = useState([]);
+
+  const updateCartItem = (id, newQuantity) => {
+    setCartItems(currentCartItems => currentCartItems.map(item => 
+       item.id === id ? { ...item, quantity: newQuantity } : item
+    ));
+   };
  
   return (
     <div className={st.layout}>
       <CartContext.Provider
         value={{
           itemsCounter, setItemsCounter, 
-          cartItems, setCartItems
+          cartItems, setCartItems, updateCartItem
         }}
       >
         <ApplicationBar />

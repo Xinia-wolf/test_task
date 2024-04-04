@@ -1,10 +1,12 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useContext } from "react";
 import st from "./styles.module.css";
 import trashBin from "../../icons/Delete.svg";
+import { CartContext } from "../context/cart-context";
 
 const CartItem = ({ item }) => {
   const [quantity, setQuantity] = useState(item.quantity);
   const [itemTotal, setItemTotal] = useState(item.price * item.quantity);
+  const { updateCartItem } = useContext(CartContext);
 
   const total = useCallback(() => {
       let totalVal = quantity * item.price;
@@ -18,11 +20,13 @@ const CartItem = ({ item }) => {
   const handleDecrement = () => {
     if (quantity > 1) {
       setQuantity(quantity - 1);
+      updateCartItem(item.id, quantity - 1);
     }
   };
 
   const handleIncrement = () => {
     setQuantity(quantity + 1);
+    updateCartItem(item.id, quantity + 1);
   };
 
   return (

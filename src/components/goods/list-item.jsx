@@ -20,7 +20,6 @@ const Item = ({ item }) => {
     } else {
       setCartItems([...cartItems, { ...item, quantity: 1 }]);
     };
-    console.log(cartItems);
   };
 
   const handleClick = () => {

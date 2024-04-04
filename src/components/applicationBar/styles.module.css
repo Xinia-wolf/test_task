@@ -28,6 +28,10 @@
     align-items: center;
 }
 
+.favourites:hover {
+    cursor: pointer;
+}
+
 .cart_container {
     margin: 20px 162.31px 0 25px;
     position: relative;

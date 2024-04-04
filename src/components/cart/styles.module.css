@@ -8,6 +8,10 @@
     font-family: "Montserrat Medium";
   }
 
+.cart {
+    display: flex;
+}
+
 .cart_header {
     font-family: "Montserrat SemiBold";
     font-size: 20px;
@@ -16,6 +20,10 @@
 
 .cartContainer {
     margin-bottom: 407px;
+}
+
+.emptyCart {
+    width: 633px;
 }
 
 .itemCard {
@@ -126,4 +134,49 @@
 
 .itemTotal:after {
 	content: ' \20BD';
+}
+
+.totalCostContainer {
+    width: 350px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    padding-top: 21px;
+    position: relative;
+    margin-left: 127px;
+}
+
+.totalCost {
+    display: flex;
+    margin: 0 16.33px 0 21.43px;
+    justify-content: space-between;
+}
+
+.totalCostValue::before {
+    content: ' \20BD';
+    margin-right: 5px;
+}
+
+.totalCostValue {
+    font-family: "Montserrat SemiBold";
+    font-size: 15px;
+}
+
+.totalCostButton {
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: "Montserrat SemiBold";
+    font-size: 17px;
+}
+
+.totalCostButton:hover {
+    cursor: pointer;
 }
